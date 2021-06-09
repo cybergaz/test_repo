@@ -7,9 +7,9 @@
     <title>Hello World! | Home</title>
     <link rel="stylesheet" href="/css/style.css" />
   <script>
-        let menubtn = document.getElementById("menubtn");
-        let navbar = document.getElementById("navbar");
-        let menu = document.getElementById("menu");
+        var menubtn = document.getElementsByClassName("menubtn");
+        var navbar = document.getElementByClassName("navbar");
+        var menu = document.getElementByClassName("menu");
     
         menubtn.onclick = function(){
             if(navbar.style.right == "-250px"){
@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-      <div id="navbar">
+      <div class="navbar">
         <nav>
           <ul>
             <li class="item"><a href="#">Home</a></li>
@@ -48,7 +48,7 @@
           </ul>
         </nav>
       </div>
-      <div id="menubtn">
+      <div class="menubtn">
           <img src="css/menu.png" id="menu">
       </div>
       <script>
