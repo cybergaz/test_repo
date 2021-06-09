@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World! | Home</title>
     <link rel="stylesheet" href="/css/style.css" />
-  </head>
+  <script>
+        let menubtn = document.getElementById("menubtn");
+        let navbar = document.getElementById("navbar");
+        let menu = document.getElementById("menu");
+    
+        menubtn.onclick = function(){
+            if(navbar.style.right == "-250px"){
+                navbar.style.right = "0";
+            }
+            else{
+                navbar.style.right = "-250";
+            }
+        }
+    </script>
+</head>
+
   <body>
     <section class="home">
       <img src="/image/logo.png" id="logo" />
