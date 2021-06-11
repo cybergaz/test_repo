@@ -1,4 +1,4 @@
-/* reset css */
+  /* reset css */
 /* *{
     margin: 0;
     padding: 0;
@@ -6,11 +6,12 @@
 /* Css of the home page */
 .home {
   background: linear-gradient(rgb(0, 0, 0, 0.5), #0096),
-    url("/image/pexels-lumn-399161.jpg") center;
+    url("/image/pexels-lumn-399161.jpg") ;
     background-size: cover;
   height: 100vh;
+  margin: -8px;
 }
-#logo {
+.logo {
   height: 74px;
   width: 50ox;
   margin: 37px 55px;
@@ -61,8 +62,9 @@
     top: 0;
     background: #009688;
     position: fixed;
-    z-index: 2;
+    z-index: 9;
     transition: 1s;
+    display: none;
 }
 #navbar ul li{
     list-style: none;
@@ -72,20 +74,23 @@
     text-decoration: none;
     color: white;
 }
-#menubtn {
-    width: 50px;
-    height: 50px;
-    background: #009688;
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 4px;
-    z-index: 3;
-    cursor: pointer;
 
+.menuicon {
+    position: fixed;
+    z-index: 999;
+    display: block;
+    width: 30px;
+    /*cursor: pointer;*/
+    float:right;
+    flex-grow: 2em;
+    right: 40;
+    top: 50;
+    
 }
-#menubtn img{
-    width: 20px;
-    margin-top: 15px;
+.menuicon:hover {
+    cursor: pointer;
+}
+
+#navbar{
+    /*display: block;*/
 }
