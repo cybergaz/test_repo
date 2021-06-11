@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World! | Home</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    
     <section class="home">
-      <img src="/image/logo.png" id="logo" />
+      <img src="image/logo.png" class="logo" />
       <div class="Brief">
         <h1>Hello coders!</h1>
         <p>
@@ -21,8 +21,11 @@
           <a href="#"><span></span>About us</a>
         </div>
       </div>
-    </section>
+    
+      <img src="css/menu.png" class="menuicon" id="menuicon">
+      
       <div id="navbar">
+        
         <nav>
           <ul>
             <li class="item"><a href="#">Home</a></li>
@@ -33,23 +36,23 @@
           </ul>
         </nav>
       </div>
-      <div id="menubtn">
-          <img src="css/menu.png" id="menu">
-      </div>
-      <script>
-        let menubtn = document.getElementById("menubtn")
-        let navbar = document.getElementById("navbar")
-        let menu = document.getElementById("menu")
-    
-        menubtn.onclick = function(){
-            if(navbar.style.right == "-250px"){
-                navbar.style.right = "0";
-            }
-            else{
-                navbar.style.right = "-250";
-            }
-        }
+    </section>
+
+    <script >
+      let menubtn  = document.getElementById('menuicon');
+      var x = document.getElementById('navbar');
+          menubtn.addEventListener('click',function(){
+            
+            if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+          });
+      
     </script>
   </body>
 
 </html>
+
