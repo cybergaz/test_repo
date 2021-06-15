@@ -12,58 +12,61 @@
 		<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
+		<div class="header">
+			<img src="pictures/4643966.png" class="menuicon" id="menuicon">
+			<nav>
+			
+			<a href="#" class="cross" id="cross" style="color: white;font-family: ubuntu;font-weight: bolder;font-size: 3em;">x</a>
+			<ul class="nav">
+
+						<li><a href="#" class="btn-home">Home</a></li>
+						<li><a href="#" class="btn-guide">Guide</a></li>
+						<li><a href="#" class="btn-aboutus">AboutUs</a></li>
+						<li><a href="#" class="btn-contact">Contact</a></li>
+						<li><a href="#" class="btn-projects">Projects</a></li>
+
+					</ul>
+				</nav>
+
+
+  	<a class="title" href="#"><span style="color: cyan;">X</span>corp.</a>
+		</div>
 		<section class="main_sec" id="main_sec">
 			<div class="head">
 
-				<a class="title" href="#"><span style="color: cyan;">X</span>corp.</a>
-
-				
-				<ul class="nav">
-						<li><a href="#" class="btn-home">Home</a></li>
-						<li><a href="#" class="btn-guide">Guide</a></li>
-						<li><a href="#" class="btn-aboutus">AboutUs</a></li>
-						<li><a href="#" class="btn-contact">Contact</a></li>
-					</ul>
-
-				
-				<div class="button-container-1">
+  	
+	</div>
+	<div class="text">Get ready to experience a new adventure</div>
+			<div class="button-container-1" id="getstarted">
       <span class="mas">Get Started</span>
     <button id='work' type="button" name="Hover">Get Started</button>
   </div>
-  	<img src="pictures/4643966.png" class="menuicon" id="menuicon">
-	</div>
-	<div class="nav2-div" id="nav2-div">
-		<img src="pictures/483345.png" class="cross" id="cross">
-	<ul class="nav2">
-						<li><a href="#" class="btn-home">Home</a></li>
-						<li><a href="#" class="btn-guide">Guide</a></li>
-						<li><a href="#" class="btn-aboutus">AboutUs</a></li>
-						<li><a href="#" class="btn-contact">Contact</a></li>
-					</ul>
-				</div>
-			
-			<div class="text">Get ready to experience a new adventure</div>
 
 		</section>
 
 	
 <script type="text/javascript">
 	let a = document.getElementById('menuicon');
-	let b = document.getElementById('nav2-div');
 	let c = document.getElementById('cross');
+	let d = document.querySelector('nav');
+	let e = document.getElementById('getstarted')
 	a.addEventListener('click',()=>{
               
-              if (b.style.display === "none") {
-      b.style.display = "block";
+              if (d.style.display === "none") {
+      d.style.display = "block";
+    	e.style.display = "none" ;
     } else {
-      b.style.display = "none";
+      d.style.display = "none";
+      e.style.display = "block" ;
     }});
     c.addEventListener('click',()=>{
               
-              if (b.style.display === "none") {
-      b.style.display = "block";
+              if (d.style.display === "none") {
+      d.style.display = "block";
+      e.style.display = "none" ;
     } else {
-      b.style.display = "none";
+      d.style.display = "none";
+      e.style.display = "block";
     }
 	});
 </script>
