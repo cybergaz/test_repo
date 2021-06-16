@@ -6,7 +6,7 @@
 body{
 	height: 100%;
 	background-image: url("pictures/neon_bubbles_2.jpg");
-	/*background-size: contain;*/
+	background-size: contain;
 }
 .header {
 	position: fixed;
