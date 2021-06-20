@@ -1,0 +1,394 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body{
+	height: 100%;
+	background-image: url("pictures/neon_bubbles_2.jpg");
+	background-size: contain;
+}
+.header {
+	position: fixed;
+	top: 0;	
+	width: 100%;
+}
+.main_sec{
+	height: 70%;
+}
+.header a{
+	text-decoration: none;
+	}
+.header img{
+	width: 35px;
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	display: none;
+	cursor: pointer;
+}
+nav{
+	display: none;
+	/*top: 30em;*/
+}
+.nav li{
+	margin-top: 1.5em;
+	list-style: none;
+	float: left;
+	/*display: block;*/
+	font-family: ubuntu;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0 1em;
+}
+.nav a{
+	/*display: block;*/
+	padding: 7px 10px;
+	color: white;
+}
+.nav a:hover{
+	background: white;
+	color: black;
+
+	border-radius: 2em;
+	box-shadow: -2px 2px 10px white;
+}
+.title{
+	position: fixed;
+	transition: 0.6s;
+	/*overflow: hidden;*/
+	/*text-overflow: clip;*/
+	display: block;
+	right: 0;
+	top: -7px;
+	padding: 26px 48px;
+	font-family: ubuntu;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: white;
+}
+.cross{
+	display: none;
+}
+.text{
+	text-align: center;
+	margin-top: 30vh;
+	/*padding: 35vh;*/
+	font-family: lato;
+	font-weight: 300;
+	font-size: 5em;
+	color: white;
+	text-shadow: -3px 3px 6px white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container-1 {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  /*float: left;*/
+  margin-right: auto;
+  margin-top: 10vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  color: white;
+  /*background: b/;*/
+  letter-spacing: 2px;
+  border-radius: 8px;
+}
+.button-container-1 button {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  background: white;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: black;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+
+}
+
+.mas {
+  position: absolute;
+  color:white;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 15px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+
+
+@media all and (min-width: 945px) {
+	nav {
+		display: block;
+	}
+}
+@media all and (max-width: 945px) {
+	.nav {
+		display: none;
+
+	}
+	.text{
+		font-size: 3em;
+	}
+	#menuicon{
+		display: block;
+	}
+	.nav {
+		display: block;
+		position: fixed;
+		z-index: 9;
+		background: black;
+		height: 100vh;
+		width: 50%;
+		left: 2.5em;
+		border-radius: 1em;
+	}
+	.cross{
+		display: block;
+		position: absolute;
+		z-index: 999;
+		left: 0.2em;
+	}
+	.nav li{
+		padding: 1em;
+		display: block;
+		/*margin-right: 30%;*/
+	}
+}
+@media all and (max-width: 470px){
+	
+	.button-container-1 button{
+		font-size: 16px;
+		color: black;
+	}
+	
+
+	.mas{
+		font-size: 12px;
+		/*color: black;*/
+	}
+	.text{
+		font-size: 2em;
+	}
+
+
+
+}
+
+
+
+.Team {
+	display: block;
+	border-radius: 2em;
+  margin: 75px 0;
+  padding: 6%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right , purple ,white,white,white ,white,blue );
+
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  color: #333;
+  padding-bottom: 10px;
+}
+h1::after {
+  content: "";
+  background: #333;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+
+.row {
+	padding: 5vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 120px 120px	;
+  justify-content: space-between;
+  align-items: start;
+
+}
+.col
+{	display: block;
+	margin: 5vw;
+
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.img-responsive
+{
+    width: 100%;
+    border-radius: 7px;
+}
+#aassim-col{
+	width: 30%;
+	overflow: hidden;
+}
+.net
+{
+    width: 80%;
+    display: block;
+}
+.net li
+{
+    display: inline-block;
+    padding: 7px;
+}
+.net li:hover
+{
+    transform: translateY(-7px);
+    /*size: 20px;*/
+}
+
+
+
+
+
+
+
+
+
+
+/*services section*/
+.services-container{
+	background-image: url(bgimg.jpg);
+	border-radius: 2em;
+	padding: 3em 0;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box1 , .box2 , .box3{
+    border: 2px solid brown;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 3em 2em;
+    /*color: white;*/
+    background:white;
+    width: 30%;
+    align-content: center;
+}
+#services img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    width: 160px;
+}
+#services .box1:hover , .box2:hover , .box3:hover{
+      transform: scale(1.3);
+}
+
+#services .box1 , .box2 , .box3 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*utility classes*/
+.h-primary , .h-secondary{
+    font-size: 40px;
+    padding: 12px;
+    color: blueviolet;
+    text-align: center;
+}
+.button {
+  padding: 15px 25px;
+  margin: 0.5em 0 0 3em;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition: 2s;
+  align-content: center;
+  position: relative;
+}
+
+.button:hover {background-color: red;}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.center{
+    text-align: center;
+    transition: width 2s;
+    color: black;
+}
