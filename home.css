@@ -9,9 +9,17 @@ body{
 	background-image: url("pictures/neon_bubbles_2.jpg");
 	background-size: contain;
 }
+
+
 .header {
+	background: url(bgimg.jpg);
+	border-radius: 1em;
+
+	
+	padding-bottom: 1.5em;
 	position: fixed;
 	top: 0;	
+	z-index: 999;
 	width: 100%;
 }
 .main_sec{
