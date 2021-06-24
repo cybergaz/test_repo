@@ -498,7 +498,6 @@ h1::after {
 		text-align: center;
 		overflow: unset;
 		background-size: auto;
-		height: 160%;
 	}
 	.thumbnails{
 		display: block;
